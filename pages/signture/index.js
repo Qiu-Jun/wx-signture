@@ -1,7 +1,7 @@
 import canvas from './modules/canvas'
 import canvas2d from './modules/canvas2d'
 
-const CANVASTYPE = '2d' // 是否为canvas 2d  '' or '2d'
+const CANVASTYPE = '' // 是否为canvas 2d  '' or '2d'
 let ctx = null
 let _cavans = null
 
