@@ -1,0 +1,15 @@
+<view class="signture-wrap">
+    <canvas
+        class="canvas"
+        type="{{ is2d ? '2d' : null }}"
+        id="signture"
+        canvas-id="signture"
+        catchtouchstart="onTouchStart" 
+        catchtouchmove="onTouchMove"
+    ></canvas>
+
+    <view class="btns" catchtap="onBtn">
+        <view class="btn reset" data-type="reset">重置</view>
+        <view class="btn confirm" data-type='confirm'>确认</view>
+    </view>
+</view>

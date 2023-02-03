@@ -1,21 +1,23 @@
 import canvasConfig from './config'
 
-function create2dCtx() {
+function create2dCtx(ctx) {
     const { windowWidth, windowHeight, pixelRatio } = this.data.windowInfo
-    const query = wx.createSelectorQuery()
+    const query = this.createSelectorQuery()
     return new Promise((resolve) => {
         query.select('#signture')
             .fields({ node: true, size: true })
             .exec((res) => {
-                const canvas = res[0].node
-                canvas.width = windowWidth * pixelRatio
-                canvas.height = windowHeight * pixelRatio
-                const ctx = canvas.getContext('2d') || null
-                ctx.scale(pixelRatio, pixelRatio)
-                resolve({
-                    ctx,
-                    canvas
-                })
+                if(res[0]) {
+                    const canvas = res[0].node
+                    canvas.width = windowWidth * pixelRatio
+                    canvas.height = windowHeight * pixelRatio
+                    const ctx = canvas.getContext('2d') || null
+                    ctx.scale(pixelRatio, pixelRatio)
+                    resolve({ 
+                        ctx,
+                        canvas
+                    })
+                }
         })
     })
 }

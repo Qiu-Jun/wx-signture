@@ -1,7 +1,7 @@
 import canvasConfig from './config'
 
 function createCtx() {
-    const ctx = wx.createCanvasContext('signture') || null
+    const ctx = wx.createCanvasContext('signture', this)
     return  {
         ctx,
         canvas: null // 2d 时需要的，这里直接null
@@ -15,7 +15,7 @@ function clearCanvas(ctx) {
     ctx.setTextBaseline('top')
     ctx.setTextAlign('center')
     ctx.setFontSize(20)
-    ctx.setFillStyle(canvasConfig.defaultTextColor);
+    ctx.setFillStyle(canvasConfig.defaultTextColor); 
     ctx.fillText("请签名", windowWidth / 2, windowHeight / 2 - 20)
     ctx.draw(false)
 }
