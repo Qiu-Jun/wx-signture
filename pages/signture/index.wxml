@@ -1,4 +1,6 @@
 <view class="signture-wrap">
 
-    <demo bind:signtureConfirm="onConfirm" />
+    <demo
+        canvasType="2d"
+        bind:signtureConfirm="onConfirm" />
 </view>

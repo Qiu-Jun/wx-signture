@@ -22,6 +22,6 @@
   },
   "homepage": "https://github.com/Qiu-Jun/wxMiniCanvasSignture#readme",
   "dependencies": {
-    "wx_mini_signture": "^0.0.3"
+    "wx_mini_signture": "^0.0.4"
   }
 }

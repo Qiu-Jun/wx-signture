@@ -1,13 +1,22 @@
 import canvas from './modules/canvas'
 import canvas2d from './modules/canvas2d'
 
-const CANVASTYPE = '2d' // 是否为canvas 2d  '' or '2d'
 let ctx = null
 let _cavans = null
+function test() {
+    console.log('test')
+}
 
 Component({
+    properties: {
+        canvasType: {
+            type: String,
+            value: ''
+        }
+    },
+
     data: {
-        is2d: CANVASTYPE === '2d', 
+        is2d: false, // 是否是2d
         windowInfo: null, // 窗口信息 
     },
 
@@ -19,10 +28,21 @@ Component({
             } else {
                 winInfo = wx.getWindowInfo() 
             }
-            const { is2d } = this.data
+            const { canvasType } = this.data
+            const is2d = canvasType === '2d'
+            if(canvasType && canvasType === '2d') {
+                Object.keys(canvas2d).forEach(i => {
+                    this.__proto__[i] = canvas2d[i]
+                })
+            } else {
+                Object.keys(canvas).forEach(i => {
+                    this.__proto__[i] = canvas[i]
+                })
+            }
             this.drawCount = 0 // 等于0时，绘制会初始化，重置直接设置为0， 确认如果可以继续绘制那么就不用设置为0
             this.setData({
-                windowInfo: winInfo
+                windowInfo: winInfo,
+                is2d
             }, async () => {
                 if(!ctx) {
                     const { ctx: _ctx, canvas } = is2d ? await this.create2dCtx(ctx) :  this.createCtx(ctx)
@@ -41,8 +61,6 @@ Component({
     },
 
     methods: {
-        ...((CANVASTYPE && CANVASTYPE === '2d') ? canvas2d : canvas),
-
         onTouchStart(e) {
             this.canvasStart(ctx, e)
         },

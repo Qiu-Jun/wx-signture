@@ -7,8 +7,10 @@ function create2dCtx(ctx) {
         query.select('#signture')
             .fields({ node: true, size: true })
             .exec((res) => {
+                console.log(res)
                 if(res[0]) {
                     const canvas = res[0].node
+                    console.log(canvas)
                     canvas.width = windowWidth * pixelRatio
                     canvas.height = windowHeight * pixelRatio
                     const ctx = canvas.getContext('2d') || null
