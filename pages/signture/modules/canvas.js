@@ -16,7 +16,7 @@ function clearCanvas(ctx) {
     ctx.setTextAlign('center')
     ctx.setFontSize(20)
     ctx.setFillStyle(canvasConfig.defaultTextColor);
-    ctx.fillText("请在灰色区域内完成签名", windowWidth / 2, windowHeight / 2 - 20)
+    ctx.fillText("请签名", windowWidth / 2, windowHeight / 2 - 20)
     ctx.draw(false)
 }
 

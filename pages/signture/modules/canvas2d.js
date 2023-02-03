@@ -30,7 +30,7 @@ function clearCanvas(ctx) {
     ctx.lineWidth = canvasConfig.signtrueLineWidth  ; // 字体粗细
     ctx.font = '20px Arial' // 字体大小，
     ctx.fillStyle = canvasConfig.defaultTextColor // 填充颜色
-    ctx.fillText('请在灰色区域内完成签名', windowWidth / 2, windowHeight / 2)
+    ctx.fillText('请签名', windowWidth / 2, windowHeight / 2)
     ctx.save()
 } 
 
