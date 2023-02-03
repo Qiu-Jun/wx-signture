@@ -1,7 +1,7 @@
 <view class="signture-wrap">
     <canvas
         class="canvas"
-        type="{{ is2d ? '2d' : null }}"
+        type="{{ canvasType }}"
         id="signture"
         canvas-id="signture"
         catchtouchstart="onTouchStart" 

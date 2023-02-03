@@ -1,9 +1,12 @@
 {
-  "name": "wx_signture",
-  "version": "1.0.1",
-  "description": "电子签名，微信canvas",
+  "name": "wx_mini_signture",
+  "version": "0.0.7",
+  "description": "微信小程序电子签名",
   "miniprogram": "src",
   "main": "index.js",
+  "files": [
+      "src/"
+  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -12,16 +15,13 @@
     "url": "git+https://github.com/Qiu-Jun/wxMiniCanvasSignture.git"
   },
   "keywords": [
-    "电子签名",
-    "微信canvas"
+    "微信小程序电子签名",
+    "电子签名"
   ],
   "author": "June",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Qiu-Jun/wxMiniCanvasSignture/issues"
   },
-  "homepage": "https://github.com/Qiu-Jun/wxMiniCanvasSignture#readme",
-  "dependencies": {
-    "wx_mini_signture": "^0.0.4"
-  }
+  "homepage": "https://github.com/Qiu-Jun/wxMiniCanvasSignture#readme"
 }
