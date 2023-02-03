@@ -1,0 +1,14 @@
+{
+    "pages": [
+        "pages/signture/index",
+        "pages/test/test"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#fff",
+        "navigationBarTitleText": "电子签名(兼容2d)",
+        "navigationBarTextStyle": "black"
+    },
+    "style": "v2",
+    "sitemapLocation": "sitemap.json"
+}
