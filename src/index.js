@@ -3,9 +3,6 @@ import canvas2d from './modules/canvas2d'
 
 let ctx = null
 let _cavans = null
-function test() {
-    console.log('test')
-}
 
 Component({
     properties: {

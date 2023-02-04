@@ -19,7 +19,7 @@
     "电子签名"
   ],
   "author": "June",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/Qiu-Jun/wxMiniCanvasSignture/issues"
   },
