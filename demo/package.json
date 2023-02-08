@@ -4,11 +4,11 @@
   "description": "小程序canvas电子签名(兼容2d)",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "copy": "bash ./scripts/cpsh.sh"
   },
   "author": "June",
   "license": "ISC",
   "dependencies": {
-    "wx_mini_signture": "^0.0.7"
+    "wx_mini_signture": "^0.2.0"
   }
 }

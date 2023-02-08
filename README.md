@@ -38,6 +38,21 @@ Page({
 })
 ```
 
+## 属性
+| canvasType |  是否必填  |  类型   |  默认  | 可选值 |
+| --- | --- | --- | --- | ---- |
+| canvasType | 非  | String | 2d |  2d or '' |
+| confirmText | 非  | String | 确认 |  any string |
+| confirmTextColor | 非  | String | #fff | 颜色 |
+| confirmBg | 非  | String | #f34250 | 颜色 |
+| resetText | 非  | String | 重置 | any string |
+| resetTextColor | 非  | String | #333 |  颜色 |
+| resetBg | 非  | String | #fff |  颜色  |
+| defaultText | 非  | String | 请签名 |  any string |
+| defaultTextColor | 非  | String | #616165 |  颜色 |
+| signtureLineWidth | 非  | Number | 2 | int number |
+| signtureColor | 非  | String | #333 | 颜色 |
+
 ## TODO
 - [x] 实现旧版canvas签名
 - [x] 实现canvas 2d签名

@@ -2,5 +2,7 @@
 
     <demo
         canvasType="2d"
-        bind:signtureConfirm="onConfirm" />
+        signtureColor="#f34250"
+        bind:signtureConfirm="onConfirm"
+    />
 </view>

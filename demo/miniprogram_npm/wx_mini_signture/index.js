@@ -3,15 +3,52 @@ import canvas2d from './modules/canvas2d'
 
 let ctx = null
 let _cavans = null
-function test() {
-    console.log('test')
-}
 
 Component({
     properties: {
         canvasType: {
             type: String,
             value: ''
+        },
+        confirmText: {
+            type: String,
+            value: '确认'
+        },
+        confirmTextColor: {
+            type: String,
+            value: '#fff'
+        },
+        confirmBg: {
+            type: String,
+            value: '#f34250'
+        },
+        resetText: {
+            type: String,
+            value: '重置'
+        },
+        resetTextColor: {
+            type: String,
+            value: '#333'
+        },
+        resetBg: {
+            type: String,
+            value: '#fff'
+        },
+        defaultText: {
+            type: String,
+            value: '请签名'
+        },
+        defaultTextColor: { // 默认字的颜色
+            type: String,
+            value: '#616165'
+        },
+        signtureLineWidth: { // 签名的lineWidth
+            type: Number,
+            value: 2
+        },
+        signtureColor: { // 签名的颜色
+            type: String,
+            value: '#333'
         }
     },
 

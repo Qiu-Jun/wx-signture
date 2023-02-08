@@ -9,7 +9,15 @@
     ></canvas>
 
     <view class="btns" catchtap="onBtn">
-        <view class="btn reset" data-type="reset">重置</view>
-        <view class="btn confirm" data-type='confirm'>确认</view>
+        <view
+            class="btn reset"
+            data-type="reset"
+            style="background-color: {{ resetBg }};color: {{ resetTextColor }};"
+        >{{ resetText }}</view>
+        <view
+            class="btn confirm"
+            data-type='confirm'
+            style="background-color: {{ confirmBg }};color: {{ confirmTextColor }};"
+        >{{ confirmText }}</view>
     </view>
 </view>
