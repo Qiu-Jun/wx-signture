@@ -1,7 +1,7 @@
 ## wxMiniCanvasSignture
 小程序canvas电子签名(兼容2d)
 
-![预览图](./demo/imgs/introduct.jpg)
+![预览图](https://github.com/Qiu-Jun/wxMiniCanvasSignture/blob/main/demo/imgs/introduct.jpg)
 
 + Usage
 ```bash
