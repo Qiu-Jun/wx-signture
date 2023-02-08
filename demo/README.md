@@ -1,10 +1,3 @@
-<!--
- * @Author: June
- * @Description: 
- * @Date: 2023-02-03 17:30:28
- * @LastEditors: June
- * @LastEditTime: 2023-02-05 23:38:09
--->
 # wxMiniCanvasSignture
 小程序canvas电子签名(兼容2d)
 
@@ -14,6 +7,9 @@
 ```bash
 npm i wx_mini_signture
 ```
+
++ 小程序npm包构建
+
 ```json
 // index.json
 {

@@ -8,6 +8,8 @@
 npm i wx_mini_signture
 ```
 
++ 小程序npm包构建
+
 ```json
 // index.json
 {
