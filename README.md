@@ -5,7 +5,7 @@
 
 + Usage
 ```bash
-npm i wx_mini_signture
+npm i wx_signture
 ```
 
 + 小程序npm包构建
