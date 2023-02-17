@@ -9,6 +9,6 @@
   "author": "June",
   "license": "ISC",
   "dependencies": {
-    "wx_mini_signture": "^0.2.0"
+    "wx_signture": "^0.2.0"
   }
 }

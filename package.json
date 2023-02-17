@@ -12,16 +12,17 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Qiu-Jun/wxSignture.git"
+    "url": "git+https://github.com/Qiu-Jun/wx-signture.git"
   },
   "keywords": [
     "微信小程序电子签名",
-    "电子签名"
+    "电子签名",
+    "小程序canvas"
   ],
   "author": "June",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Qiu-Jun/wxSignture/issues"
+    "url": "https://github.com/Qiu-Jun/wx-signture/issues"
   },
-  "homepage": "https://github.com/Qiu-Jun/wxSignture#readme"
+  "homepage": "https://github.com/Qiu-Jun/wx-signture#readme"
 }

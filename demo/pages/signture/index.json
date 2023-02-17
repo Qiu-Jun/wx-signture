@@ -1,6 +1,6 @@
 {
     "pageOrientation": "landscape",
     "usingComponents": {
-        "demo": "wx_mini_signture"
+        "demo": "wx_signture"
     }
 }
